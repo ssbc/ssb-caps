@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git+https://github.com/ssbc/ssb-caps.git"
   },
-  "main": "readme.js",
+  "main": "caps.json",
   "author": "public-domain",
   "license": "CC0-1.0",
   "keywords": [
