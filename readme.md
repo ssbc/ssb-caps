@@ -45,8 +45,8 @@ If this library updates the Caps, we MUST issue a new major version.
 
 ## Legal
 
-Written in 2015 by 'Dominic Tarr' <dominic.tarr@gmail.com>
-Contributor: Andre Medeiros <andre@staltz.com>
+- Written in 2015 by 'Dominic Tarr' <dominic.tarr@gmail.com>
+- Contributor: Andre Medeiros <andre@staltz.com>
 
 To the extent possible under law, the author(s) have dedicated all copyright
 and related and neighboring rights to this software to the public domain
