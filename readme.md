@@ -31,6 +31,9 @@ parse it using some JSON parser in your language.
 
 ## Details
 
+
+### shs (secret-handshake connection key)
+
 There is nothing special about the Caps SHS value, it was randomly generated in
 the Node.js REPL with:
 
@@ -42,6 +45,18 @@ from this string to binary (in Node.js):
     Buffer.from(require('ssb-caps').shs, 'base64')
 
 If this library updates the Caps, we MUST issue a new major version.
+
+### sign (message validation key)
+
+this is used to hmac messages before signing/verification.
+because originally, ssb does not use anything, this defaults to null.
+
+### invite (peer invites signing key)
+
+peer invites sign a message content using the private key which is given to
+the guest. It is the hash of the string `"peer-invites"`
+
+    crypto.createHash('sha256').update('peer-invites', 'utf8').digest('base64')
 
 ## Legal
 
